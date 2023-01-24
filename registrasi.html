@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <script src="dist/js/validate.js"></script>
+    <link href="Assets/Image/ROOM-IN Company Logo.png" rel="icon">
+    <link href="Assets/Image/ROOM-IN Company Logo.png" rel="apple-touch-icon">
+<style>
+
+body {
+    background-color: #9f9da7;
+    color: #2b3e51;
+  }
+
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+label{
+    font-weight: bold;
+}
+
+form {
+    box-shadow: 1px 2px 8px rgba(0,0,0,0.65);
+    border-radius: 15px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container p {
+    color: red;
+}
+
+button {
+    background-color: rgb(14, 210, 14);
+    color: white;
+    margin: 20px auto;
+    margin-left: 140px;
+    padding: 12px 20px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+h1 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="" method="POST">
+            <h1>Registrasi</h1>
+            <div class="container">
+                <label>Nama Lengkap</label>
+                <input type="text" name="name" id="name">
+                <p id="error_name"></p>
+                <label>Username</label>
+                <input type="text" name="username" id="username">
+                <p id="error_username"></p>
+                <label>Email</label>
+                <input type="email" name="email" id="email">
+                <p id="error_email"></p>
+                <label>Password</label>
+                <input type="password" name="password" id="password">
+                <p id="error_password"></p>
+                <label>Cek Password</label>
+                <input type="password" name="password" id="cekPass">
+                <p id="error_pass"></p>
+                <a href="login.html">
+                <button type="button" onclick="registrasi()">Submit</button>
+                </a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
